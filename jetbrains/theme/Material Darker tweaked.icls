@@ -1,10 +1,10 @@
 <scheme name="Material Darker tweaked" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2020-08-28T12:05:16</property>
+    <property name="created">2020-09-17T16:27:43</property>
     <property name="ide">CLion</property>
     <property name="ideVersion">2020.2.1.0.0</property>
-    <property name="modified">2020-08-28T12:05:31</property>
+    <property name="modified">2020-09-17T16:27:55</property>
     <property name="originalScheme">Material Darker tweaked</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.4" />
@@ -264,7 +264,7 @@
         <option name="FOREGROUND" value="ffcb6b" />
       </value>
     </option>
-    <option name="COFFEESCRIPT.GLOBAL_VARIABLE" baseAttributes="" />
+    <option name="COFFEESCRIPT.GLOBAL_VARIABLE" baseAttributes="JS.GLOBAL_VARIABLE" />
     <option name="COFFEESCRIPT.THIS">
       <value>
         <option name="FOREGROUND" value="ff5370" />
@@ -1432,7 +1432,7 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="LESS_VARIABLE" baseAttributes="" />
+    <option name="LESS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="LINE_FULL_COVERAGE">
       <value>
         <option name="BACKGROUND" value="264b33" />
@@ -2819,7 +2819,7 @@
     </option>
     <option name="OC.STRUCT_FIELD">
       <value>
-        <option name="FOREGROUND" value="eeffff" />
+        <option name="FOREGROUND" value="46c4c4" />
         <option name="EFFECT_COLOR" value="212121" />
         <option name="EFFECT_TYPE" value="4" />
       </value>
@@ -3449,14 +3449,14 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="SASS_COMMENT" baseAttributes="" />
+    <option name="SASS_COMMENT" baseAttributes="CSS.COMMENT" />
     <option name="SASS_MIXIN">
       <value>
         <option name="FOREGROUND" value="82aaff" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="SASS_VARIABLE" baseAttributes="" />
+    <option name="SASS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="323232" />
@@ -3615,7 +3615,7 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="eaff94" />
+        <option name="FOREGROUND" value="eeffff" />
         <option name="BACKGROUND" value="212121" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
