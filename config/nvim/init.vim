@@ -1,7 +1,8 @@
+
 "----------------------------- Plugins (VimPlug)---------------------------"
 
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 "Tools
     Plug 'vifm/vifm.vim'
@@ -42,12 +43,18 @@ set backspace=indent,eol,start confirm
 set shiftwidth=4 autoindent smartindent tabstop=4 softtabstop=4 expandtab  
 set laststatus=2 cmdheight=1
 set splitbelow splitright 
-set nobackup nowritebackup
+set noswapfile nobackup nowritebackup
 set colorcolumn=80
 set cursorline
 set hls is ic
+set scrolloff=8
 
-set signcolumn=number
+"Color Settings
+set t_Co=256
+colorscheme gruvbox
+set background=dark cursorline
+
+"set signcolumn=number
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
@@ -74,9 +81,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 nmap <silent> ll :call CocAction('format')<CR>
 
-"Color Settings
-colorscheme gruvbox
-set background=dark cursorline termguicolors
+imap jj <Esc>
 
 "------------------------------ Custom ------------------------------------"
 "Coc auto completion
