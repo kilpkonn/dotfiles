@@ -1,0 +1,4 @@
+[ver:1,total:360,branch:master]
+config/alacritty/alacritty.yml:180,1617638400:180,m
+script/symlink-dotfiles.sh:120,1617692400:120,m
+config/procs/config.toml:60,1617692400:60,m
