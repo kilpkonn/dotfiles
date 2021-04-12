@@ -1,0 +1,4 @@
+[ver:1,total:510,branch:master]
+config/tmux/.tmux.conf:210,1617724800:180,1617728400:30,r
+config/procs/config.toml:180,1617692400:180,r
+script/symlink-dotfiles.sh:120,1618239600:120,m
