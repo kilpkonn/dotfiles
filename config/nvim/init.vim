@@ -50,9 +50,9 @@ set hls is ic
 set scrolloff=8
 
 "Color Settings
-set t_Co=256
+"set t_Co=256
 colorscheme gruvbox
-set background=dark cursorline
+"set background=dark cursorline
 
 "set signcolumn=number
 
