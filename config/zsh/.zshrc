@@ -37,6 +37,12 @@ _comp_options+=(globdots)		# Include hidden files.
 bindkey -v
 export KEYTIMEOUT=1
 
+# Reverse search
+bindkey '^R' history-incremental-search-backward
+
+# Jump around line
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -73,9 +79,20 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 
+# Hooks
+autoload -U add-zsh-hook
+add-zsh-hook -Uz chpwd (){ 
+    if [ -d ".git" ]; then
+        onefetch
+    else
+        : # this is not a git repositoryi
+    fi 
+}
+
+
 # Alias stuff
 alias v="nvim"
-alias ll="exa -al"
+alias ll="exa -abghHliS"
 alias cat="batcat"
 
 
@@ -84,3 +101,4 @@ alias idris2="~/.idris2/bin/idris2"
 
 # External stuff
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"

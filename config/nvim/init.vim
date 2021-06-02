@@ -122,3 +122,7 @@ endfunction
 autocmd User AirlineAfterInit call AirlineInit()
 
 let g:gtm_plugin_status_enabled = 1
+
+" -------------------------- Neovide specific ------------------------
+let g:neovide_refresh_rate=60
+set guifont=FiraCode\ Nerd\ Font:h15
