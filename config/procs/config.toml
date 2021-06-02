@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@kilpkonn 
-dalance
-/
-procs
-14
-1.7k
-39
-Code
-Issues
-11
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-procs/config/large.toml
-@dalance
-dalance Add automatic theme detection #78
-Latest commit 27ef91c on Jan 28
- History
- 2 contributors
-@JaKXz@dalance
-207 lines (177 sloc)  3.6 KB
- 
 [[columns]]
 kind = "Pid"
 style = "BrightYellow|Yellow"
@@ -238,16 +205,4 @@ path = "unix:///var/run/docker.sock"
 [pager]
 mode = "Auto"
 
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
