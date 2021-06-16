@@ -1,5 +1,5 @@
 # Plugins
-export ZSH=$HOME/.oh-my-zsh
+# export ZSH=$HOME/.oh-my-zsh
 
 # Zsh syntax highligting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
@@ -8,8 +8,8 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue,bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 
-plugins=(zsh-syntax-highlighting)
-source $ZSH/oh-my-zsh.sh
+# plugins=(zsh-syntax-highlighting)
+# source $ZSH/oh-my-zsh.sh
 
 # Enable colors
 autoload -U colors && colors
@@ -93,10 +93,10 @@ add-zsh-hook -Uz chpwd (){
 # Alias stuff
 alias v="nvim"
 alias ll="exa -abghHliS"
-alias cat="batcat"
+alias cat="bat"
 
 
-alias idris2="~/.idris2/bin/idris2"
+# alias idris2="~/.idris2/bin/idris2"
 
 
 # External stuff

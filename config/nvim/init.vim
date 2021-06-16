@@ -48,6 +48,7 @@ set colorcolumn=80
 set cursorline
 set hls is ic
 set scrolloff=8
+set nowrap
 
 "Color Settings
 "set t_Co=256
