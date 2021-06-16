@@ -100,6 +100,9 @@ alias cat="bat"
 # alias idris2="~/.idris2/bin/idris2"
 
 
+# Plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # External stuff
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

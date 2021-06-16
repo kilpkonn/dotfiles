@@ -35,6 +35,6 @@ Config { font    = "xft:Ubuntu:weight=bold:pixelsize=11:antialias=true:hinting=t
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{  <fc=#666666>|</fc>  <fc=#b3afc2><fn=3></fn>  <action=`alacritty -e btm`>%uname%</action> </fc> <fc=#666666>|</fc>  <fc=#ecbe7b> <action=`alacritty -e btm`>%cpu%</action> </fc> <fc=#666666>|</fc>  <fc=#ff6c6b> <action=`alacritty -e btm`>%memory%</action> </fc> <fc=#666666>|</fc>  <fc=#51afef> <action=`alacritty -e btm`>%disku%</action> </fc> <fc=#666666>|</fc>  <fc=#98be65> <action=`alacritty -e sudo iftop`>%enp6s0%</action> </fc> <fc=#666666>|</fc>    <fc=#666666>|</fc>  <fc=#46d9ff> <action=`emacsclient -c -a 'emacs' --eval '(doom/window-maximize-buffer(dt/year-calendar))'`>%date%</action>  </fc>"
+       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{  <fc=#666666>|</fc>  <fc=#b3afc2><fn=3></fn>  <action=`alacritty -e btm`>%uname%</action> </fc> <fc=#666666>|</fc>  <fc=#ecbe7b> <action=`alacritty -e btm`>%cpu%</action> </fc> <fc=#666666>|</fc>  <fc=#ff6c6b> <action=`alacritty -e btm`>%memory%</action> </fc> <fc=#666666>|</fc>  <fc=#51afef> <action=`alacritty -e btm`>%disku%</action> </fc> <fc=#666666>|</fc>  <fc=#98be65> <action=`alacritty -e sudo bandwhich`>%enp6s0%</action> </fc> <fc=#666666>|</fc>    <fc=#666666>|</fc>  <fc=#46d9ff> <action=`emacsclient -c -a 'emacs' --eval '(doom/window-maximize-buffer(dt/year-calendar))'`>%date%</action>  </fc>"
        }
 

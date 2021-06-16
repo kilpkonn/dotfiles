@@ -1,6 +1,4 @@
-
-"----------------------------- Plugins (VimPlug)---------------------------"
-
+"----------------------------- Plugins (VimPlug)---------------------------" 
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -15,13 +13,16 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'rust-lang/rust.vim', { 'for': 'rs' }          " Rust support
     Plug 'pangloss/vim-javascript', { 'for': 'js' }     " JavaScript support
 
-    Plug 'idbrii/vim-gtm'
+    Plug 'DEVELOPEST/gtm-vim'
 
 "Visual
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS
     Plug 'leafgarland/typescript-vim', { 'for': 'ts' }  " TypeScript syntax
     Plug 'maxmellon/vim-jsx-pretty', { 'for': 'jsx' }   " JS and JSX syntax
+    Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'hpp', 'c', 'h', 'c++', 'h++'] } " C/C++ syntax
+    Plug 'pboettch/vim-cmake-syntax', { 'for': 'CMakeLists.txt' }
+    Plug 'neovimhaskell/haskell-vim', { 'for': 'hs' }
     Plug 'vim-airline/vim-airline'
 
 "Color Schemes
@@ -74,6 +75,11 @@ nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
 nnoremap <leader>l <C-W>l
 
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -83,7 +89,11 @@ nmap <silent> gr <Plug>(coc-references)
 
 nmap <silent> ll :call CocAction('format')<CR>
 
+nnoremap <silent> D :call <SID>show_documentation()<CR>
+
 imap jj <Esc>
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 "------------------------------ Custom ------------------------------------"
 "Coc auto completion
@@ -98,9 +108,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -111,10 +118,13 @@ function! s:show_documentation()
   endif
 endfunction
 
-command! -nargs=0 Format :call CocAction('format')
+" Highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 
-
-"GTM
+" GTM
 function! AirlineInit()
   if exists('*GTMStatusline')
     call airline#parts#define_function('gtmstatus', 'GTMStatusline')
