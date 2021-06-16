@@ -5,7 +5,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 "Tools
-    Plug 'vifm/vifm.vim'
+    "Plug 'vifm/vifm.vim'
+    Plug 'preservim/nerdtree'
     Plug 'airblade/vim-gitgutter'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' } " Code completion
 
@@ -63,7 +64,7 @@ let g:coc_global_extensions = [ 'coc-tsserver' ]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "------------------------------ Key Bindings ------------------------------"
 
-map <Tab> :EditVifm .<CR>
+map <Tab> :NERDTreeToggle<CR>
 
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv

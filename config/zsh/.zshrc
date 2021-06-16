@@ -92,6 +92,7 @@ add-zsh-hook -Uz chpwd (){
 
 # Alias stuff
 alias v="nvim"
+alias j="joshuto"
 alias ll="exa -abghHliS"
 alias cat="bat"
 
@@ -102,3 +103,6 @@ alias cat="bat"
 # External stuff
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+# Run freshfetch
+freshfetch
