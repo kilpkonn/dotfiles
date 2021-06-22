@@ -7,6 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'airblade/vim-gitgutter'
     Plug 'neoclide/coc.nvim' , { 'branch' : 'release' } " Code completion
+    Plug 'tpope/vim-fugitive'
 
     
     Plug 'edwinb/idris2-vim', { 'for': 'idr' }          " Idris2 support
@@ -53,14 +54,22 @@ set scrolloff=8
 set nowrap
 
 "Color Settings
-"set t_Co=256
+" Enable 24 bit colors
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 colorscheme gruvbox
-"set background=dark cursorline
+
+hi DiffAdd guifg=NONE ctermfg=NONE guibg=#012800 ctermbg=238 gui=NONE cterm=NONE
+hi DiffChange guifg=NONE ctermfg=NONE guibg=#082040 ctermbg=239 gui=NONE cterm=NONE
+hi DiffDelete guifg=NONE ctermfg=NONE guibg=#340001 ctermbg=237 gui=NONE cterm=NONE
 
 "set signcolumn=number
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
-
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "------------------------------ Key Bindings ------------------------------"
@@ -95,6 +104,12 @@ imap jj <Esc>
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+" Git
+set diffopt+=vertical
+nmap <leader>gl :diffget //3<CR>
+nmap <leader>gh :diffget //2<CR>
+nmap <leader>gs :G<CR>
+
 "------------------------------ Custom ------------------------------------"
 "Coc auto completion
 inoremap <silent><expr> <TAB>
@@ -117,6 +132,9 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+" NerdTRee
+let NERDTreeShowHidden=1
 
 " Highlighting
 let g:cpp_class_scope_highlight = 1
