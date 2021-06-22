@@ -29,6 +29,7 @@ call plug#begin('~/.config/nvim/plugged')
 "Color Schemes
     Plug 'morhetz/gruvbox'
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'jacoborus/tender.vim'
 
 call plug#end()
 
@@ -61,7 +62,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme gruvbox
+colorscheme onehalfdark "gruvbox
 
 hi DiffAdd guifg=NONE ctermfg=NONE guibg=#012800 ctermbg=238 gui=NONE cterm=NONE
 hi DiffChange guifg=NONE ctermfg=NONE guibg=#082040 ctermbg=239 gui=NONE cterm=NONE
@@ -69,7 +70,7 @@ hi DiffDelete guifg=NONE ctermfg=NONE guibg=#340001 ctermbg=237 gui=NONE cterm=N
 
 "set signcolumn=number
 
-let g:coc_global_extensions = [ 'coc-tsserver' ]
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json', 'coc-cmake', 'coc-css', 'coc-html', 'coc-java', 'coc-python', 'coc-rust-analyzer', 'coc-rls', 'coc-texlab', 'coc-toml', 'coc-yaml']
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "------------------------------ Key Bindings ------------------------------"
