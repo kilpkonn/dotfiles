@@ -71,6 +71,8 @@ hi DiffAdd guifg=NONE ctermfg=NONE guibg=#012800 ctermbg=238 gui=NONE cterm=NONE
 hi DiffChange guifg=NONE ctermfg=NONE guibg=#082040 ctermbg=239 gui=NONE cterm=NONE
 hi DiffDelete guifg=NONE ctermfg=NONE guibg=#340001 ctermbg=237 gui=NONE cterm=NONE
 hi PMenu guifg=NONE ctermfg=NONE guibg=#202020 ctermbg=16 gui=NONE cterm=NONE
+hi Operator guifg=#4c99dd 
+hi rustIdentifier guifg=#dbb30b 
 
 "set signcolumn=number
 
