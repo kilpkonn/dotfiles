@@ -11,8 +11,11 @@ call plug#begin('~/.config/nvim/plugged')
 
     
     Plug 'edwinb/idris2-vim', { 'for': 'idr' }          " Idris2 support
-    Plug 'rust-lang/rust.vim', { 'for': 'rs' }          " Rust support
-    Plug 'pangloss/vim-javascript', { 'for': 'js' }     " JavaScript support
+    "Plug 'rust-lang/rust.vim', { 'for': 'rs' }          " Rust support
+    Plug 'Iron-E/rust.vim', { 'branch': 'master', 'for': 'rs' }          " Rust support
+    Plug 'pangloss/vim-javascript', { 'for': ['js', 'jsx'] } 
+    Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'tsx'] }
+    Plug 'peitalin/vim-jsx-typescript', { 'for': ['jsx', 'tsx'] }
 
     Plug 'DEVELOPEST/gtm-vim'
 
@@ -67,10 +70,11 @@ colorscheme onehalfdark "gruvbox
 hi DiffAdd guifg=NONE ctermfg=NONE guibg=#012800 ctermbg=238 gui=NONE cterm=NONE
 hi DiffChange guifg=NONE ctermfg=NONE guibg=#082040 ctermbg=239 gui=NONE cterm=NONE
 hi DiffDelete guifg=NONE ctermfg=NONE guibg=#340001 ctermbg=237 gui=NONE cterm=NONE
+hi PMenu guifg=NONE ctermfg=NONE guibg=#202020 ctermbg=16 gui=NONE cterm=NONE
 
 "set signcolumn=number
 
-let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json', 'coc-cmake', 'coc-css', 'coc-html', 'coc-java', 'coc-python', 'coc-rust-analyzer', 'coc-rls', 'coc-texlab', 'coc-toml', 'coc-yaml']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-cmake', 'coc-css', 'coc-html', 'coc-java', 'coc-python', 'coc-rust-analyzer', 'coc-texlab', 'coc-toml', 'coc-yaml']
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "------------------------------ Key Bindings ------------------------------"
@@ -97,11 +101,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+
 nmap <silent> ll :call CocAction('format')<CR>
-
 nnoremap <silent> D :call <SID>show_documentation()<CR>
-
-imap jj <Esc>
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 

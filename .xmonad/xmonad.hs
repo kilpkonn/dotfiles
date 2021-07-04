@@ -335,6 +335,7 @@ myManageHook = composeAll
     , title     =? "Steam"               --> doShift ( myWorkspaces !! 5 )
     , title     =? "Discord"             --> doShift ( myWorkspaces !! 4 )
     , title     =? "Neovide"             --> doShift ( myWorkspaces !! 0 )
+    , title     =? "Veloren"             --> doShift ( myWorkspaces !! 5 )
     ]
 
 ------------------------------------------------------------------------
