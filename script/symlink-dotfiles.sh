@@ -1,4 +1,4 @@
-ln -s -f ~/git/dotfiles/config/nvim/init.vim ~/.config/nvim/init.vim
+# ln -s -f ~/git/dotfiles/config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s -f ~/git/dotfiles/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -s -f ~/git/dotfiles/config/procs/config.toml ~/.config/procs/config.toml
 ln -s -f ~/git/dotfiles/config/starship/starship.toml ~/.config/starship.toml
