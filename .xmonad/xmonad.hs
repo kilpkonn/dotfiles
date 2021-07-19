@@ -270,6 +270,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
+    -- Take screenshot with hacksaw
+    , ((modm,               xK_s     ), spawn "selection=$(hacksaw -f \"-i %i -g %g\"); shotgun $selection - | xclip -t 'image/png' -selection clipboard" )
     ]
     ++
 
