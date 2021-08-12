@@ -56,7 +56,7 @@ import qualified Data.Map        as M
 --
 myTerminal      = "alacritty"
 
-myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=9:antialias=true:hinting=true"
+myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=16:antialias=true:hinting=true"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -271,7 +271,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     -- Take screenshot with hacksaw
-    , ((modm,               xK_s     ), spawn "selection=$(hacksaw -f \"-i %i -g %g\"); shotgun $selection - | xclip -t 'image/png' -selection clipboard" )
+    , ((modm,               xK_s     ), spawn "selection=$(hacksaw -s 2); sleep 1; shotgun -g $selection - | xclip -t 'image/png' -sel clip" )
+    -- Record screen with hacksaw & ffmpg
+    , ((modm,               xK_f     ), spawn "~/scripts/record")
     ]
     ++
 
@@ -362,7 +364,7 @@ myEventHook = mempty
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
     spawnOnce "compton &"
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 36 &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
