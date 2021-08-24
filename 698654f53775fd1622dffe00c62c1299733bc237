@@ -1,0 +1,10 @@
+[ver:1,total:3600,branch:master]
+.xmonad/xmonad.hs:2124,1629820800:540,1629824400:1584,m
+script/layout_switch.sh:600,1629824400:600,m
+.steam/symlink.sh:360,1629561600:180,1629565200:180,m
+.steam/csgo/smokes.cfg:160,1629561600:160,m
+.git/COMMIT_EDITMSG:120,1629824400:120,r
+script/symlink-dotfiles.sh:80,1629561600:20,1629824400:60,m
+script/screenshot.sh:76,1629824400:76,m
+.steam/csgo/autoexec.cfg:60,1629561600:60,m
+script/record.sh:20,1629824400:20,m
