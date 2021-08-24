@@ -7,3 +7,4 @@ ln -s -f ~/git/dotfiles/.config/zsh/.zshenv ~/.zshenv
 ln -s -f ~/git/dotfiles/.config/xmobar/xmobarrc ~/.config/xmobar/xmobarrc
 
 ln -s -f ~/git/dotfiles/.xmonad ~/.xmonad
+ln -s -f ~/git/dotfiles/script ~/script

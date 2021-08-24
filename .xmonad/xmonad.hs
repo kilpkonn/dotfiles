@@ -1,4 +1,3 @@
---
 -- xmonad example config file.
 --
 -- A template showing all available configuration hooks,
@@ -55,7 +54,6 @@ import qualified Data.Map        as M
 -- certain contrib modules.
 --
 myTerminal      = "alacritty"
-
 myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=16:antialias=true:hinting=true"
 
 -- Whether focus follows the mouse pointer.
@@ -271,9 +269,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     -- Take screenshot with hacksaw
-    , ((modm,               xK_s     ), spawn "selection=$(hacksaw -s 2); sleep 1; shotgun -g $selection - | xclip -t 'image/png' -sel clip" )
+    , ((modm,               xK_s     ), spawn "~/script/screenshot.sh" )
     -- Record screen with hacksaw & ffmpg
-    , ((modm,               xK_f     ), spawn "~/scripts/record")
+    , ((modm,               xK_f     ), spawn "~/script/record.sh")
+    -- Toggle keyboards
+    , ((modm .|. mod1Mask,  xK_space ), spawn "~/script/layout_switch.sh")
     ]
     ++
 
