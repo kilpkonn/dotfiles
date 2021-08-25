@@ -54,7 +54,12 @@ import qualified Data.Map        as M
 -- certain contrib modules.
 --
 myTerminal      = "alacritty"
+<<<<<<< Updated upstream
 myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=16:antialias=true:hinting=true"
+=======
+
+myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=11:antialias=true:hinting=true"
+>>>>>>> Stashed changes
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -87,7 +92,7 @@ tall     = renamed [Replace "tall"]
            $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
            $ limitWindows 12
-           $ mySpacing 8
+           $ mySpacing 4
            $ ResizableTall 1 (3/100) (1/2) []
 magnify  = renamed [Replace "magnify"]
            $ smartBorders
@@ -95,7 +100,7 @@ magnify  = renamed [Replace "magnify"]
            $ subLayout [] (smartBorders Simplest)
            $ magnifier
            $ limitWindows 12
-           $ mySpacing 8
+           $ mySpacing 4
            $ ResizableTall 1 (3/100) (1/2) []
 monocle  = renamed [Replace "monocle"]
            $ smartBorders
@@ -110,14 +115,14 @@ grid     = renamed [Replace "grid"]
            $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
            $ limitWindows 12
-           $ mySpacing 8
+           $ mySpacing 4
            $ mkToggle (single MIRROR)
            $ Grid (16/10)
 spirals  = renamed [Replace "spirals"]
            $ smartBorders
            $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
-           $ mySpacing 8
+           $ mySpacing 4
            $ spiral (6/7)
 threeCol = renamed [Replace "threeCol"]
            $ smartBorders
@@ -156,7 +161,7 @@ myTabTheme = def { fontName            = myFont
 -- Theme for showWName which prints current workspace when you change workspaces.
 myShowWNameTheme :: SWNConfig
 myShowWNameTheme = def
-    { swn_font              = "xft:Ubuntu:bold:size=60"
+    { swn_font              = "xft:Ubuntu:bold:size=40"
     , swn_fade              = 1.0
     , swn_bgcolor           = "#1c1f24"
     , swn_color             = "#ffffff"
@@ -364,7 +369,7 @@ myEventHook = mempty
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
     spawnOnce "compton &"
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 36 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 20 &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
