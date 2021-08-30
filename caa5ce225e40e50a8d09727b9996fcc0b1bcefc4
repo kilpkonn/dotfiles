@@ -1,3 +1,6 @@
 [ver:1,total:60,branch:master]
 .config/alacritty/alacritty.yml:40,1630346400:40,m
 .git/COMMIT_EDITMSG:20,1630346400:20,r
+
+[ver:1,total:60,branch:master]
+.git/COMMIT_EDITMSG:60,1630346400:60,r
