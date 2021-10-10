@@ -1,0 +1,6 @@
+[ver:1,total:720,branch:master]
+script/screenshot.sh:330,1630432800:330,m
+.xmonad/xmonad.hs:300,1630432800:150,1633885200:150,m
+script/layout_switch.sh:30,1633885200:30,r
+script/lock:30,1633885200:30,d
+.git/COMMIT_EDITMSG:30,1633885200:30,r
