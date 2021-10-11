@@ -279,6 +279,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_f     ), spawn "~/script/record.sh")
     -- Toggle keyboards
     , ((modm .|. mod1Mask,  xK_space ), spawn "~/script/layout_switch.sh")
+    -- Lock screen
+    , ((modm .|. mod1Mask,  xK_l     ), spawn "~/script/lock.sh")
     ]
     ++
 
