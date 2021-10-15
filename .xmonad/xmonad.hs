@@ -54,12 +54,9 @@ import qualified Data.Map        as M
 -- certain contrib modules.
 --
 myTerminal      = "alacritty"
-<<<<<<< Updated upstream
-myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=16:antialias=true:hinting=true"
-=======
 
-myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=11:antialias=true:hinting=true"
->>>>>>> Stashed changes
+myFuntSize      = 16
+myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=" ++ (show myFuntSize) ++ ":antialias=true:hinting=true"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
