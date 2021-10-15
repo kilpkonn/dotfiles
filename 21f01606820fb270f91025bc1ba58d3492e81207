@@ -1,0 +1,5 @@
+[ver:1,total:2050,branch:master]
+.config/xmobar/xmobar.hs:1480,1634295600:1480,r
+.xmonad/xmonad.hs:470,1634292000:250,1634295600:200,1634299200:20,m
+.git/MERGE_MSG:60,1634292000:60,d
+.git/COMMIT_EDITMSG:40,1634299200:40,r
