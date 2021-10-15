@@ -1,0 +1,5 @@
+[ver:1,total:3710,branch:master]
+.xmonad/xmonad.hs:1800,1634299200:1500,1634302800:300,m
+.config/xmobar/xmobarrc:1370,1634292000:290,1634299200:1080,m
+script/symlink-dotfiles.sh:480,1634295600:120,1634299200:360,m
+.git/COMMIT_EDITMSG:60,1634302800:60,r
