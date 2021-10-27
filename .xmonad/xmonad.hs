@@ -273,7 +273,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Take screenshot with hacksaw
     , ((modm,               xK_s     ), spawn "~/script/screenshot.sh" )
     -- Record screen with hacksaw & ffmpg
-    , ((modm,               xK_f     ), spawn "~/script/record.sh")
+    , ((modm,               xK_f     ), spawn "killall --signal INT ffmpeg")
+    , ((modm .|. mod1Mask,  xK_f     ), spawn "~/script/start_record.sh")
     -- Toggle keyboards
     , ((modm .|. mod1Mask,  xK_space ), spawn "~/script/layout_switch.sh")
     -- Lock screen

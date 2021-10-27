@@ -7,4 +7,6 @@ export EDITOR="nvim"
 export ZDOTDIR="$HOME/.config/zsh"
 
 # Path
-# export PATH="$PATH:~/.idris2/bin"
+# export PATH="$PATH:~/.ghcup/bin"
+export PATH="$HOME/.cabal/bin:$PATH"
+
