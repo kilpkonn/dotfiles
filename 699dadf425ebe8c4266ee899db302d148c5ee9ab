@@ -1,0 +1,7 @@
+[ver:1,total:1860,branch:master]
+.xmonad/xmonad.hs:920,1635343200:920,m
+.config/zsh/.zshrc:360,1634799600:180,1634803200:180,r
+script/start_record.sh:210,1635343200:210,m
+script/record.sh:180,1635343200:180,d
+script/stop_record.sh:100,1635343200:100,d
+.git/COMMIT_EDITMSG:90,1635343200:90,r
