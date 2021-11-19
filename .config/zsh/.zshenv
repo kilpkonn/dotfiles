@@ -8,5 +8,5 @@ export ZDOTDIR="$HOME/.config/zsh"
 
 # Path
 # export PATH="$PATH:~/.ghcup/bin"
-export PATH="$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$HOME/.cargo/bin:$PATH"
 

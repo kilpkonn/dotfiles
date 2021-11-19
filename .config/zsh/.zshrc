@@ -93,8 +93,10 @@ add-zsh-hook -Uz chpwd (){
 # Alias stuff
 alias v="nvim"
 alias j="joshuto"
+alias s="nsxiv"
 alias ll="exa -abghHliS"
 alias cat="bat"
+alias watch="neowatch -dz"
 
 
 # alias idris2="~/.idris2/bin/idris2"
