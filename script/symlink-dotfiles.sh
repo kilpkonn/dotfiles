@@ -6,6 +6,7 @@ ln -s -v -f ~/git/dotfiles/.config/zsh/.zshrc ~/.config/zsh/.zshrc
 ln -s -v -f ~/git/dotfiles/.config/zsh/.zshenv ~/.zshenv
 ln -s -v -f ~/git/dotfiles/.config/xmobar/xmobarrc ~/.config/xmobar/xmobarrc
 ln -s -v -f ~/git/dotfiles/.config/xmobar/trayer-padding-icon.sh ~/.config/xmobar/trayer-padding-icon.sh
+ln -s -v -f ~/git/dotfiles/.config/rofi/ ~/.config/rofi
 
 ln -s -v -T -f ~/git/dotfiles/.xmonad ~/.xmonad
 ln -s -v -T -f ~/git/dotfiles/script ~/script
