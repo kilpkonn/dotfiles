@@ -1,0 +1,12 @@
+[ver:1,total:2040,branch:master]
+.config/zsh/.zshrc:720,1640448000:720,r
+script/volume.sh:420,1640458800:120,1640462400:300,m
+script/launcher.sh:240,1640462400:240,m
+.config/rofi/applets/colors.rasi:240,1640458800:240,m
+script/symlink-dotfiles.sh:108,1640462400:108,m
+.config/rofi/applets/network.rasi:80,1640458800:80,m
+script/network.sh:72,1640462400:72,m
+.git/COMMIT_EDITMSG:60,1640462400:60,r
+script/battery.sh:60,1640462400:60,m
+.config/rofi/applets/battery.rasi:20,1640458800:20,m
+.config/rofi/applets/volume.rasi:20,1640458800:20,m
