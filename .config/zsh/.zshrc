@@ -93,14 +93,11 @@ add-zsh-hook -Uz chpwd (){
 # Alias stuff
 alias v="nvim"
 alias j="joshuto"
+alias o="xdg-open"
 alias s="nsxiv"
 alias ll="exa -abghHliS"
 alias cat="bat"
 alias watch="neowatch -dz"
-
-
-# alias idris2="~/.idris2/bin/idris2"
-
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
