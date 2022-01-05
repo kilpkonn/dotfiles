@@ -8,11 +8,10 @@ i3lock-color
 jmtpfs
 joshuto-git
 jql
-neovide-git
 nerd-fonts-fira-code
 nerd-fonts-source-code-pro
 nsxiv
-otf-font-awesome-5-free
+ttf-font-awesome
 paru-bin
 qdigidoc4
 rstudio-desktop-bin

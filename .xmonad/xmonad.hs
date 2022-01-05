@@ -55,8 +55,8 @@ import qualified Data.Map        as M
 --
 myTerminal      = "alacritty"
 
-myFuntSize      = 16
-myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=" ++ (show myFuntSize) ++ ":antialias=true:hinting=true"
+myFontSize      = 16
+myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=" ++ (show myFontSize) ++ ":antialias=true:hinting=true"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool

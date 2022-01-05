@@ -110,7 +110,6 @@ sed
 shotgun
 skim
 starship
-steam
 sudo
 swi-prolog
 tealdeer

@@ -8,7 +8,7 @@ ln -s -v -f $gitdir/.config/zsh/.zshrc ~/.config/zsh/.zshrc
 ln -s -v -f $gitdir/.config/zsh/.zshenv ~/.zshenv
 ln -s -v -f $gitdir/.config/xmobar/xmobarrc ~/.config/xmobar/xmobarrc
 ln -s -v -f $gitdir/.config/xmobar/trayer-padding-icon.sh ~/.config/xmobar/trayer-padding-icon.sh
-ln -s -v -f $gitdir/.config/rofi/ ~/.config/rofi
+ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
 
 ln -s -v -T -f $gitdir/.xmonad ~/.xmonad
 ln -s -v -T -f $gitdir/script ~/script
