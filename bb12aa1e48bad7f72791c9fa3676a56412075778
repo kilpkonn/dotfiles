@@ -1,0 +1,6 @@
+[ver:1,total:420,branch:master]
+pkglist_aur.txt:230,1641409200:230,m
+script/symlink-dotfiles.sh:110,1641409200:110,m
+.xmonad/xmonad.hs:30,1641409200:30,m
+.git/COMMIT_EDITMSG:30,1641409200:30,r
+pkglist.txt:20,1641409200:20,m
