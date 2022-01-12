@@ -1,0 +1,5 @@
+[ver:1,total:2040,branch:master]
+.xmonad/xmonad.hs:1425,1641841200:420,1641992400:1005,m
+script/volume.sh:360,1641841200:60,1641844800:300,r
+.config/rofi/applets/volume.rasi:180,1641844800:180,r
+.git/COMMIT_EDITMSG:75,1641992400:75,r
