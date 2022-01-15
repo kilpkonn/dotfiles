@@ -55,7 +55,7 @@ import qualified Data.Map        as M
 --
 myTerminal      = "alacritty"
 
-myFontSize      = 16
+myFontSize      = 12
 myFont          = "xft:SauceCodePro Nerd Font Mono:regular:size=" ++ (show myFontSize) ++ ":antialias=true:hinting=true"
 
 -- Whether focus follows the mouse pointer.

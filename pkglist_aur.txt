@@ -16,4 +16,3 @@ paru-bin
 qdigidoc4
 rstudio-desktop-bin
 ttf-ms-fonts
-veloren
