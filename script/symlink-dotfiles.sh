@@ -9,6 +9,7 @@ ln -s -v -f $gitdir/.config/zsh/.zshenv ~/.zshenv
 
 ln -s -v -T -f $gitdir/.config/xmobar ~/.config/xmobar
 ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
+ln -s -v -T -f $gitdir/.config/flameshot ~/.config/flameshot
 
 ln -s -v -T -f $gitdir/.xmonad ~/.xmonad
 ln -s -v -T -f $gitdir/script ~/script
