@@ -371,7 +371,7 @@ myStartupHook = do
   spawnOnce "compton &"
   spawnOnce "nm-applet &"
   -- TODO: Get rid of sleep
-  spawnOnce "sleep 1; killall trayer; trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 20 --margin 6 --iconspacing 10 &"
+  spawnOnce "sleep 1; killall trayer; trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 24 --margin 6 --iconspacing 10 &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
@@ -379,7 +379,7 @@ myStartupHook = do
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do
-  xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc-1080"
+  xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc"
   xmonad $
     docks
       def
