@@ -1,0 +1,9 @@
+[ver:1,total:1860,branch:master]
+.xmonad/xmonad.hs:720,1644408000:300,1644433200:180,1644580800:240,r
+.config/alacritty/alacritty.yml:420,1644580800:180,1644584400:240,m
+.config/xmobar/xmobarrc:240,1644408000:240,m
+script/battery.sh:180,1643551200:180,r
+.config/zsh/.zshrc:150,1643270400:150,r
+.git/COMMIT_EDITMSG:60,1645182000:60,r
+README.md:60,1645182000:60,r
+.config/zsh/.zshenv:30,1643270400:30,m
