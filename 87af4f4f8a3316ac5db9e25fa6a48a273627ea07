@@ -1,0 +1,7 @@
+[ver:1,total:3600,branch:master]
+.config/zsh/.zshrc:3060,1645182000:480,1645185600:1900,1645189200:180,1645210800:500,m
+.git/MERGE_MSG:180,1645182000:180,d
+script/symlink-dotfiles.sh:150,1645210800:150,m
+.config/zsh/.zshenv:140,1645185600:140,r
+.git/COMMIT_EDITMSG:40,1645210800:40,r
+.config/fsh/overlay.ini:30,1645210800:30,m
