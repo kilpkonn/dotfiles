@@ -1,15 +1,11 @@
 # Plugins
-# export ZSH=$HOME/.oh-my-zsh
 
 # Zsh syntax highligting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue,bold'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
-
-# plugins=(zsh-syntax-highlighting)
-# source $ZSH/oh-my-zsh.sh
+# ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+#
+# typeset -A ZSH_HIGHLIGHT_STYLES
+# ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue,bold'
+# ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 
 # Enable colors
 autoload -U colors && colors
@@ -81,12 +77,15 @@ bindkey '^e' edit-command-line
 
 # Hooks
 autoload -U add-zsh-hook
-add-zsh-hook -Uz chpwd (){ 
+add-zsh-hook -Uz chpwd () { 
     if [ -d ".git" ]; then
         onefetch
     else
         : # this is not a git repositoryi
-    fi 
+    fi
+
+    [[ -d "venv" ]] && source ./venv/bin/activate
+    [[ ! -d "venv" && -n "$VIRTUAL_ENV" ]] && deactivate > /dev/null
 }
 
 
@@ -100,7 +99,8 @@ alias cat="bat"
 alias watch="neowatch -dz"
 
 # Plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # TODO: Remove?
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh >> /dev/null # BUG: print warning otherwise
 
 # External stuff
 eval "$(starship init zsh)"
