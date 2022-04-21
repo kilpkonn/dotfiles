@@ -100,7 +100,7 @@ alias watch="neowatch -dz"
 
 # Plugins
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # TODO: Remove?
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh >> /dev/null # BUG: print warning otherwise
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2> /dev/null # BUG: print warning otherwise
 
 # External stuff
 eval "$(starship init zsh)"

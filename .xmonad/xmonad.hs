@@ -368,7 +368,7 @@ myManageHook =
 --
 myStartupHook = do
   spawnOnce "nitrogen --restore &"
-  spawnOnce "compton &"
+  spawnOnce "picom &"
   spawnOnce "nm-applet &"
   -- TODO: Get rid of sleep
   spawnOnce "sleep 1; killall trayer; trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 24 --margin 6 --iconspacing 10 &"
