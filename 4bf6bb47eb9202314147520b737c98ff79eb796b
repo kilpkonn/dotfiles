@@ -1,0 +1,4 @@
+[ver:1,total:360,branch:master]
+script/symlink-dotfiles.sh:240,1653742800:240,m
+.julia/config/startup.jl:60,1653742800:60,m
+.git/COMMIT_EDITMSG:60,1653742800:60,r
