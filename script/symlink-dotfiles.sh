@@ -13,6 +13,7 @@ ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
 ln -s -v -T -f $gitdir/.config/flameshot ~/.config/flameshot
 
 ln -s -v -T -f $gitdir/.xmonad ~/.xmonad
+ln -s -v -T -f $gitdir/.julia/config ~/.julia/config
 ln -s -v -T -f $gitdir/script ~/script
 
 # ln -s -v -f $gitdir/etc/pacman.conf /etc/pacman.conf
