@@ -1,0 +1,5 @@
+[ver:1,total:660,branch:master]
+script/symlink-dotfiles.sh:360,1654020000:360,m
+.config/zsh/.zshrc:180,1657198800:180,m
+etc/pacman.d/hooks/xmonad.hook:60,1654020000:60,m
+.git/COMMIT_EDITMSG:60,1657296000:60,r
