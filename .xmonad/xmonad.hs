@@ -13,7 +13,8 @@ import System.Exit
 import XMonad
 import XMonad.Actions.MouseResize
 import XMonad.Hooks.DynamicLog (PP (..), dynamicLogWithPP, shorten, wrap, xmobarColor, xmobarPP)
-import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docks, docksEventHook, manageDocks)
+import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docks, manageDocks)
+import XMonad.Hooks.StatusBar.PP (filterOutWsPP)
 import XMonad.Layout.Accordion
 import XMonad.Layout.GridVariants (Grid (Grid))
 import XMonad.Layout.LayoutModifier
@@ -398,11 +399,10 @@ main = do
           -- hooks, layouts
           layoutHook = showWName' myShowWNameTheme myLayoutHook,
           manageHook = myManageHook <+> manageDocks,
-          handleEventHook = docksEventHook,
           startupHook = myStartupHook,
           logHook =
             dynamicLogWithPP $
-              namedScratchpadFilterOutWorkspacePP $
+              filterOutWsPP [scratchpadWorkspaceTag] $
                 xmobarPP
                   { -- the following variables beginning with 'pp' are settings for xmobar.
                     ppOutput = hPutStrLn xmproc, -- xmobar on monitor 1
