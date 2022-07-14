@@ -8,6 +8,7 @@ biber
 binutils
 bison
 bottom
+broot
 cabal-install
 ccid
 chromium

@@ -16,11 +16,9 @@ nerd-fonts-source-code-pro
 nsxiv
 paru-bin
 pijul
-plotjuggler
 python-klepto
 qdigidoc4
 ros-noetic-plotjuggler-ros
-ros-noetic-video-stream-opencv
 rstudio-desktop-bin
 ttf-ms-fonts
 zsh-fast-syntax-highlighting
