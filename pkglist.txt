@@ -1,4 +1,5 @@
 alsa-utils
+atuin
 autoconf
 automake
 bandwhich
@@ -165,6 +166,7 @@ which
 xclip
 xdotool
 xf86-video-vesa
+xh
 xmobar
 xmonad
 xmonad-contrib

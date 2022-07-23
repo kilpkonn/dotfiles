@@ -119,6 +119,7 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 # External stuff
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
 
 # Run freshfetch
 freshfetch
