@@ -16,6 +16,15 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
+setopt append_history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history # share command history data
+
 
 # Basic auto/tab completion 
 autoload -U compinit
@@ -34,7 +43,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # Reverse search
-bindkey '^R' history-incremental-search-backward
+# bindkey '^R' history-incremental-search-backward
 
 # Jump around line
 bindkey "^A" vi-beginning-of-line
@@ -119,7 +128,11 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 # External stuff
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+export ATUIN_NOBIND="true"
 eval "$(atuin init zsh)"
+
+bindkey '^r' _atuin_search_widget
 
 # Run freshfetch
 freshfetch
