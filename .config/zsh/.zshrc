@@ -112,6 +112,41 @@ function br {
     fi
 }
 
+# Atuin for history
+export ATUIN_SESSION=$(atuin uuid)
+export ATUIN_HISTORY="atuin history list"
+
+add-zsh-hook -Uz preexec () {
+    local id; id=$(atuin history start "$1")
+    export ATUIN_HISTORY_ID="$id"
+}
+
+add-zsh-hook -Uz precmd () {
+    local EXIT="$?"
+    [[ -z "${ATUIN_HISTORY_ID}" ]] && return
+    (RUST_LOG=error atuin history end $ATUIN_HISTORY_ID --exit $EXIT &) > /dev/null 2>&1
+}
+
+_atuin_search(){
+    emulate -L zsh
+    zle -I
+
+    # Switch to cursor mode, then back to application
+    echoti rmkx
+    output=$(RUST_LOG=error atuin search -i $BUFFER 3>&1 1>&2 2>&3)
+    echoti smkx
+
+    if [[ -n $output ]] ; then
+        LBUFFER=$output
+    fi
+
+    zle reset-prompt
+}
+
+zle -N _atuin_search_widget _atuin_search
+bindkey '^r' _atuin_search_widget
+
+
 # Alias stuff
 alias v="nvim"
 alias j="joshuto"
@@ -122,17 +157,12 @@ alias cat="bat"
 alias watch="neowatch -dz"
 
 # Plugins
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # TODO: Remove?
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2> /dev/null # BUG: print warning otherwise
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # 2> /dev/null # BUG: print warning otherwise
 
 # External stuff
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-export ATUIN_NOBIND="true"
-eval "$(atuin init zsh)"
-
-bindkey '^r' _atuin_search_widget
-
 # Run freshfetch
 freshfetch
+
