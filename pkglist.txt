@@ -1,3 +1,4 @@
+alacritty
 alsa-utils
 atuin
 autoconf
@@ -33,6 +34,7 @@ findutils
 firefox
 flameshot
 flex
+fzf
 gawk
 gcc
 gcc-fortran
@@ -63,8 +65,6 @@ jdk-openjdk
 jq
 jre-openjdk
 jsoncpp
-julia
-jupyter-notebook
 kmix
 lfs
 libreoffice-still
@@ -80,6 +80,7 @@ linux-headers
 lldb
 m4
 make
+minetest
 mono-msbuild-sdkresolver
 mpv
 mtpfs
@@ -193,6 +194,7 @@ xorg-xdriinfo
 xorg-xev
 xorg-xgamma
 xorg-xhost
+xorg-xinit
 xorg-xinput
 xorg-xkbevd
 xorg-xkbutils
@@ -213,5 +215,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xterm
+zola
 zoxide
 zsh

@@ -157,7 +157,7 @@ alias cat="bat"
 alias watch="neowatch -dz"
 
 # Plugins
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # 2> /dev/null # BUG: print warning otherwise
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # External stuff
 eval "$(starship init zsh)"

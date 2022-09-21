@@ -204,7 +204,7 @@ myLayoutHook =
         ||| tallAccordion
         ||| wideAccordion
 
-myWorkspaces = [" dev ", " www ", " sys ", " doc ", " chat ", " game ", " mus ", " ssh ", " gfx "]
+myWorkspaces = [" dev ", " www ", " sys ", " doc ", " chat ", " game ", " mus ", " ssh ", " etc "]
 
 myWorkspaceIndices = M.fromList $ zip myWorkspaces [1 ..] -- (,) == \x y -> (x,y)
 
@@ -351,11 +351,11 @@ myManageHook =
     [ manageDocks,
       className =? "MPlayer" --> doFloat,
       className =? "Gimp" --> doFloat,
+      className =? "firefox" --> doShift (myWorkspaces !! 1),
+      className =? "discord" --> doShift (myWorkspaces !! 4),
       resource =? "desktop_window" --> doIgnore,
       resource =? "kdesktop" --> doIgnore,
-      title =? "Mozilla Firefox" --> doShift (myWorkspaces !! 1),
       title =? "Steam" --> doShift (myWorkspaces !! 5),
-      title =? "Discord" --> doShift (myWorkspaces !! 4),
       title =? "Neovide" --> doShift (head myWorkspaces),
       title =? "Veloren" --> doShift (myWorkspaces !! 5)
     ]
