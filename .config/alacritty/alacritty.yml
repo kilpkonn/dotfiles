@@ -274,7 +274,7 @@ mouse:
 
 hints:
   enabled:
-    - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:|src/)[^\u0000-\u001F\u007F-\u009F<>\" {-}\\^⟨⟩^:]+"
+    - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
       command: xdg-open
       post_processing: true
       mouse:
