@@ -17,6 +17,8 @@ chromium
 clang
 clinfo
 cmake
+coq
+coqide
 cronie
 discord
 dmenu
@@ -58,7 +60,6 @@ gvfs-gphoto2
 gvfs-mtp
 gzip
 hacksaw
-hledger-web
 hugo
 hyperfine
 jdk-openjdk
@@ -107,12 +108,14 @@ pacman
 pandoc
 patch
 perl-alien-build
+perl-clone
 perl-perlio-utf8-strict
 picom
 pkgconf
 postgresql-libs
 procs
 pulseaudio
+pulseaudio-alsa
 python-opencv
 python-pip
 python-pyqt5-3d
@@ -121,7 +124,6 @@ python-pyqt5-datavisualization
 python-pyqt5-networkauth
 python-pyqt5-purchasing
 python-pyqt5-webengine
-python2
 qmk
 qt5-charts
 ripgrep
@@ -161,6 +163,8 @@ ttf-fira-code
 ttf-font-awesome
 ttf-liberation
 ttf-opensans
+ttf-sourcecodepro-nerd
+unzip
 v4l2loopback-dkms
 wget
 which
