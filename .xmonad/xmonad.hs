@@ -288,8 +288,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       -- Change volume
       ((modm, xK_v), spawn "~/script/volume.sh"),
       -- Change brightness
-      ((modm .|. shiftMask, xK_Left), spawn "lux -a 5%"),
-      ((modm .|. shiftMask, xK_Right), spawn "lux -s 5%"),
+      ((modm .|. shiftMask, xK_Left), spawn "lux -s 5%"),
+      ((modm .|. shiftMask, xK_Right), spawn "lux -a 5%"),
       -- Change volume
       ((modm .|. mod1Mask, xK_Left), spawn "amixer set Master 5%- unmute"),
       ((modm .|. mod1Mask, xK_Right), spawn "amixer set Master 5%+ unmute")
@@ -372,7 +372,7 @@ myStartupHook = do
   spawnOnce "picom &"
   spawnOnce "nm-applet &"
   -- TODO: Get rid of sleep
-  spawnOnce "sleep 1; killall trayer; trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 24 --margin 6 --iconspacing 10 &"
+  spawnOnce "sleep 2; killall trayer; trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 24 --margin 6 --iconspacing 10 &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
