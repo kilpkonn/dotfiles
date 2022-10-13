@@ -17,6 +17,7 @@ ln -s -v -T -f $gitdir/.julia/config ~/.julia/config
 ln -s -v -T -f $gitdir/script ~/script
 
 sudo ln -s -v -T -f $gitdir/etc/pacman.d/hooks /etc/pacman.d/hooks
+sudo ln -s -v -f $gitdir/etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
+sudo ln -s -v -f $gitdir/etc/lightdm/slick-greeter.conf /etc/lightdm/slick-greeter.conf
 
 # ln -s -v -f $gitdir/etc/pacman.conf /etc/pacman.conf
-# ln -s -v -f $gitdir/etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
