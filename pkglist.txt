@@ -137,6 +137,7 @@ sccache
 sed
 shotgun
 skim
+sqlitebrowser
 starship
 steam
 sudo
@@ -160,6 +161,7 @@ tokei
 trayer
 ttf-dejavu
 ttf-fira-code
+ttf-firacode-nerd
 ttf-font-awesome
 ttf-liberation
 ttf-opensans

@@ -1,6 +1,7 @@
 amberol
 chrome-token-signing
 esteidpkcs11loader
+eww
 freshfetch-bin
 ghcup-hs-bin
 gitflow-avh
@@ -12,8 +13,8 @@ jaq
 joshuto-git
 jql
 julia-bin
+lightdm-settings
 marp-cli
-nerd-fonts-fira-code
 networkmanager-fortisslvpn-git
 nsxiv
 paru-bin
@@ -21,5 +22,6 @@ pijul
 pop-launcher
 python-klepto
 qdigidoc4
+tracy
 ttf-ms-fonts
 zsh-fast-syntax-highlighting
