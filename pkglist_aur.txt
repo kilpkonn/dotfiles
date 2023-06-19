@@ -1,7 +1,9 @@
 amberol
 chrome-token-signing
+cosmic-epoch-git
 esteidpkcs11loader
 eww
+findex-bin
 freshfetch-bin
 ghcup-hs-bin
 gitflow-avh
@@ -22,6 +24,8 @@ pijul
 pop-launcher
 python-klepto
 qdigidoc4
+sniffnet
 tracy
 ttf-ms-fonts
+typst-bin
 zsh-fast-syntax-highlighting
