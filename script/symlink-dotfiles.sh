@@ -7,6 +7,8 @@ ln -s -v -f $gitdir/.config/starship/starship.toml ~/.config/starship.toml
 ln -s -v -f $gitdir/.config/zsh/.zshrc ~/.config/zsh/.zshrc
 ln -s -v -f $gitdir/.config/zsh/.zshenv ~/.zshenv
 ln -s -v -f $gitdir/.config/fsh/overlay.ini ~/.config/fsh/overlay.ini
+ln -s -v -f $gitdir/.config/nushell/config.nu ~/.config/nushell/config.nu
+ln -s -v -f $gitdir/.config/nushell/env.nu ~/.config/nushell/env.nu
 
 ln -s -v -T -f $gitdir/.config/xmobar ~/.config/xmobar
 ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi

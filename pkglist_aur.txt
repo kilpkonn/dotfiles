@@ -1,6 +1,7 @@
 amberol
 chrome-token-signing
 cosmic-epoch-git
+diffsitter-bin
 esteidpkcs11loader
 eww
 findex-bin
@@ -9,8 +10,7 @@ ghcup-hs-bin
 gitflow-avh
 i3lock-color
 idris2
-idris2-lsp-git
-insomnia
+insomnia-bin
 jaq
 joshuto-git
 jql
@@ -18,13 +18,12 @@ julia-bin
 lightdm-settings
 marp-cli
 networkmanager-fortisslvpn-git
-nsxiv
 paru-bin
 pijul
 pop-launcher
 python-klepto
 qdigidoc4
-sniffnet
+rpi-imager-bin
 tracy
 ttf-ms-fonts
 typst-bin
