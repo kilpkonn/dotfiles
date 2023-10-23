@@ -1,4 +1,5 @@
 amberol
+android-sdk-platform-tools
 chrome-token-signing
 cosmic-epoch-git
 diffsitter-bin
@@ -21,9 +22,11 @@ networkmanager-fortisslvpn-git
 paru-bin
 pijul
 pop-launcher
+python-eduvpn-client
 python-klepto
 qdigidoc4
 rpi-imager-bin
+tio
 tracy
 ttf-ms-fonts
 typst-bin
