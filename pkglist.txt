@@ -68,7 +68,6 @@ hugo
 hyperfine
 jdk-openjdk
 jq
-jre-openjdk
 jsoncpp
 kmix
 libreoffice-still
