@@ -1,7 +1,7 @@
 
 gitdir=$(git rev-parse --show-toplevel)
 
-ln -s -v -f $gitdir/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s -v -f $gitdir/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -s -v -f $gitdir/.config/procs/config.toml ~/.config/procs/config.toml
 ln -s -v -f $gitdir/.config/starship/starship.toml ~/.config/starship.toml
 ln -s -v -f $gitdir/.config/zsh/.zshrc ~/.config/zsh/.zshrc
