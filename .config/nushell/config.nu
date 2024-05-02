@@ -7,11 +7,6 @@ alias ll = exa -abghHliS
 alias cat = bat
 alias watch = neowatch -dz
 
-use ~/.cache/nushell/starship.nu
-source ~/.cache/nushell/zoxide.nu
-source ~/git/nu_scripts/custom-completions/git/git-completions.nu
-# source ~/.cache/nushell/atuin.nu
-
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
   ls: {
@@ -21,14 +16,11 @@ $env.config = {
   rm: {
     always_trash: false # always act as if -t was given. Can be overridden with -p
   }
-  cd: {
-    abbreviations: false # allows `cd s/o/f` to expand to `cd some/other/folder`
-  }
   table: {
     mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
     header_on_separator: true
-    padding: {left: 0 right: 0}
-    index_mode: always # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
+    padding: {left: 1 right: 1}
+    index_mode: auto # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
     trim: {
       methodology: wrapping # wrapping or truncating
       wrapping_try_keep_words: true # A strategy used by the 'wrapping' methodology
@@ -57,8 +49,8 @@ $env.config = {
   }
   cursor_shape: {
     emacs: line # block, underscore, line (line is the default)
-    vi_insert: block # block, underscore, line (block is the default)
-    vi_normal: underscore # block, underscore, line  (underscore is the default)
+    vi_insert: line # block, underscore, line (block is the default)
+    vi_normal: block # block, underscore, line  (underscore is the default)
   }
   use_grid_icons: true
   # TODO: footer mode should specify number of terminal rows, not number of Nushell rows
@@ -66,11 +58,9 @@ $env.config = {
   float_precision: 2
   buffer_editor: "micro" # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
   use_ansi_coloring: true
-  edit_mode: emacs # emacs, vi
+  edit_mode: vi # emacs, vi
   shell_integration: true # enables terminal markers and a workaround to arrow keys stop working issue
   # true or false to enable or disable the welcome banner at startup
-  show_banner: false
-  render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
 
   hooks: {
     pre_prompt: [{||
@@ -208,3 +198,12 @@ $env.config = {
       }
   ]
 }
+
+use ~/.cache/nushell/starship.nu
+source ~/.cache/nushell/zoxide.nu
+source ~/git/nu_scripts/custom-completions/git/git-completions.nu
+source ~/.cache/nushell/atuin.nu
+
+
+# Startup
+freshfetch

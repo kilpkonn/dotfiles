@@ -1,6 +1,5 @@
 amberol
 chrome-token-signing
-cosmic-epoch-git
 diffsitter-bin
 esteidpkcs11loader
 findex-bin
@@ -8,10 +7,10 @@ freshfetch-bin
 ghcup-hs-bin
 gitflow-avh
 i3lock-color
-jaq
 joshuto-git
 jql
 julia-bin
+lib32-gperftools
 lightdm-settings
 marp-cli
 paru-bin
