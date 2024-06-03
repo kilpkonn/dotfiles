@@ -7,12 +7,12 @@ freshfetch-bin
 ghcup-hs-bin
 gitflow-avh
 i3lock-color
-joshuto-git
+joshuto-bin
 jql
 julia-bin
 lib32-gperftools
 lightdm-settings
-marp-cli
+onagre-git
 paru-bin
 pijul
 python-eduvpn-client

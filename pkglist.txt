@@ -6,6 +6,7 @@ bandwhich
 base
 base-devel
 bat
+bc
 biber
 blas
 bottom
@@ -16,7 +17,6 @@ chromium
 clang
 clinfo
 cmake
-code
 coq
 coqide
 cronie
@@ -55,6 +55,7 @@ gvfs-mtp
 hacksaw
 hugo
 hyperfine
+inkscape
 jaq
 jdk-openjdk
 jq
@@ -69,6 +70,7 @@ lightdm-slick-greeter
 linux
 linux-firmware
 linux-headers
+lld
 lldb
 mesa-utils
 minetest
@@ -115,6 +117,7 @@ python-pyqt5-datavisualization
 python-pyqt5-networkauth
 python-pyqt5-purchasing
 python-pyqt5-webengine
+qemu-base
 qmk
 qt5-charts
 ripgrep
@@ -123,6 +126,7 @@ riscv64-elf-gcc
 riscv64-elf-newlib
 rnote
 rofi
+rustup
 sccache
 shotgun
 skim
@@ -134,6 +138,7 @@ swi-prolog
 tealdeer
 texlive-basic
 texlive-bibtexextra
+texlive-binextra
 texlive-fontsextra
 texlive-formatsextra
 texlive-games
@@ -154,6 +159,8 @@ ttf-font-awesome
 ttf-liberation
 ttf-opensans
 ttf-sourcecodepro-nerd
+typos
+typst
 unzip
 v4l2loopback-dkms
 vim
@@ -211,6 +218,7 @@ xorg-xwininfo
 xorg-xwud
 xterm
 yt-dlp
+zellij
 zola
 zoxide
 zsh
