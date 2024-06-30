@@ -23,6 +23,8 @@ hacksaw -n | {
         -c:v h264        \
         -pix_fmt yuv420p \
         -crf 20          \
-        "${dir}/${current}.mp4"
+        "${dir}/${current}.mp4" # &
+
+    # ffmpeg -f alsa -ac 2 -i pulse -- "${dir}/${current}.wav"
 }
 
