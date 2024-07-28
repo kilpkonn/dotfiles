@@ -112,6 +112,16 @@ function br {
     fi
 }
 
+# yazi
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Atuin for history
 export ATUIN_SESSION=$(atuin uuid)
 export ATUIN_HISTORY="atuin history list"
@@ -152,7 +162,7 @@ alias v="nvim"
 alias j="joshuto"
 alias o="xdg-open"
 alias s="nsxiv"
-alias ll="exa -abghHliS"
+alias ll="eza -abghHliS"
 alias cat="bat"
 alias watch="neowatch -dz"
 

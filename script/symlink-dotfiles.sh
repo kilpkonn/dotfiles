@@ -9,12 +9,11 @@ ln -s -v -f $gitdir/.config/zsh/.zshenv ~/.zshenv
 ln -s -v -f $gitdir/.config/fsh/overlay.ini ~/.config/fsh/overlay.ini
 ln -s -v -f $gitdir/.config/nushell/config.nu ~/.config/nushell/config.nu
 ln -s -v -f $gitdir/.config/nushell/env.nu ~/.config/nushell/env.nu
-ln -s -v -f $gitdir/.config/zellij/config.kdl ~/.config/zellij/config.kdl
-ln -s -v -f $gitdir/.config/zellij/layout.kdl ~/.config/zellij/layouts/layout.kdl
 
 ln -s -v -T -f $gitdir/.config/xmobar ~/.config/xmobar
 ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
 ln -s -v -T -f $gitdir/.config/flameshot ~/.config/flameshot
+ln -s -v -T -f $gitdir/.config/zellij ~/.config/zellij
 
 ln -s -v -T -f $gitdir/.xmonad ~/.xmonad
 ln -s -v -T -f $gitdir/.julia/config ~/.julia/config
