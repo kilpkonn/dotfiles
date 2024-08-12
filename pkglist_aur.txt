@@ -1,7 +1,9 @@
 amberol
 chrome-token-signing
-cosmic-epoch-git
+cosmic-icons-git
+cosmic-session-git
 diffsitter-bin
+drm_info
 esteidpkcs11loader
 findex-bin
 freshfetch-bin
@@ -22,4 +24,5 @@ rpi-imager-bin
 tio
 tracy
 ttf-ms-fonts
+yay-bin
 zsh-fast-syntax-highlighting

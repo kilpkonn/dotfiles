@@ -43,7 +43,7 @@ render_timer = false
 TERM = "screen-256color"
 
 [font]
-size = 10.0
+size = 14.0
 
 [font.bold]
 family = "monospace"

@@ -20,6 +20,7 @@ cmake
 coq
 coqide
 cronie
+devtools
 difftastic
 discord
 dmenu

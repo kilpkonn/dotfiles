@@ -14,6 +14,7 @@ ln -s -v -T -f $gitdir/.config/xmobar ~/.config/xmobar
 ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
 ln -s -v -T -f $gitdir/.config/flameshot ~/.config/flameshot
 ln -s -v -T -f $gitdir/.config/zellij ~/.config/zellij
+ln -s -v -T -f $gitdir/.config/cosmic ~/.config/cosmic
 
 ln -s -v -T -f $gitdir/.xmonad ~/.xmonad
 ln -s -v -T -f $gitdir/.julia/config ~/.julia/config
