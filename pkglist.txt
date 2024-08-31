@@ -19,6 +19,13 @@ clinfo
 cmake
 coq
 coqide
+cosmic-applets
+cosmic-bg
+cosmic-comp
+cosmic-greeter
+cosmic-screenshot
+cosmic-session
+cosmic-settings
 cronie
 devtools
 difftastic
@@ -78,6 +85,7 @@ minetest
 mono-msbuild-sdkresolver
 mpv
 mtpfs
+nasm
 nautilus
 neovim
 net-tools
@@ -97,6 +105,7 @@ nvidia
 nvidia-settings
 nvidia-utils
 onefetch
+onnxruntime
 opencl-nvidia
 openssh
 openvpn
@@ -166,7 +175,9 @@ v4l2loopback-dkms
 vim
 wget
 wireshark-qt
+wl-clipboard
 xclip
+xdg-desktop-portal-cosmic
 xdotool
 xf86-video-vesa
 xh

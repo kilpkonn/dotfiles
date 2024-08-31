@@ -1,7 +1,6 @@
 amberol
 chrome-token-signing
 cosmic-icons-git
-cosmic-session-git
 diffsitter-bin
 drm_info
 esteidpkcs11loader
