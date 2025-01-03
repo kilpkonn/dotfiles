@@ -9,6 +9,7 @@ ln -s -v -f $gitdir/.config/zsh/.zshenv ~/.zshenv
 ln -s -v -f $gitdir/.config/fsh/overlay.ini ~/.config/fsh/overlay.ini
 ln -s -v -f $gitdir/.config/nushell/config.nu ~/.config/nushell/config.nu
 ln -s -v -f $gitdir/.config/nushell/env.nu ~/.config/nushell/env.nu
+ln -s -v -f $gitdir/.config/fish/config.fish ~/.config/fish/config.fish
 
 ln -s -v -T -f $gitdir/.config/xmobar ~/.config/xmobar
 ln -s -v -T -f $gitdir/.config/rofi ~/.config/rofi
