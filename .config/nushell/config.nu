@@ -43,18 +43,13 @@ $env.config = {
       completer: null # check 'carapace_completer' above as an example
     }
   }
-  filesize: {
-    metric: true # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
-    format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, zb, zib, auto
-  }
   cursor_shape: {
     emacs: line # block, underscore, line (line is the default)
     vi_insert: line # block, underscore, line (block is the default)
     vi_normal: block # block, underscore, line  (underscore is the default)
   }
-  use_grid_icons: true
   # TODO: footer mode should specify number of terminal rows, not number of Nushell rows
-  footer_mode: "4" # always, never, number_of_rows, auto
+  footer_mode: "auto" # always, never, number_of_rows, auto
   float_precision: 2
   buffer_editor: "micro" # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
   use_ansi_coloring: true

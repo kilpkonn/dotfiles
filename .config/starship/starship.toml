@@ -1,2 +1,8 @@
 [git_commit]
 only_detached = false
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
