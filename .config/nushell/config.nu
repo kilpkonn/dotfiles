@@ -6,6 +6,7 @@ alias s = nsxiv
 alias ll = exa -abghHliS
 alias cat = bat
 alias watch = neowatch -dz
+alias fg = job unfreeze
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
