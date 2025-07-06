@@ -607,7 +607,7 @@ save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [terminal.shell]
-program = "/usr/bin/zsh"
+program = "/usr/bin/nu"
 
 [window]
 decorations = "full"

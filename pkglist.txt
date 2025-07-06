@@ -36,6 +36,8 @@ cosmic-settings
 cosmic-settings-daemon
 cosmic-workspaces
 cronie
+cuda
+cudnn
 devtools
 difftastic
 discord
@@ -51,6 +53,7 @@ eva
 eza
 fd
 firefox
+fish
 flameshot
 fzf
 gcc-fortran
@@ -95,6 +98,7 @@ mpv
 mtpfs
 nasm
 nautilus
+nccl
 neovim
 net-tools
 network-manager-applet
@@ -102,7 +106,6 @@ networkmanager
 networkmanager-openvpn
 nitrogen
 nmap
-nodejs-lts-hydrogen
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -127,7 +130,6 @@ picom
 pop-launcher
 postgresql-libs
 procs
-pulseaudio
 pulseaudio-alsa
 python-opencv
 python-pip
