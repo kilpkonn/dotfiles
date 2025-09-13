@@ -116,6 +116,7 @@ nvidia
 nvidia-container-toolkit
 nvidia-settings
 nvidia-utils
+obs-studio
 onefetch
 onnxruntime
 opencl-nvidia
@@ -171,7 +172,6 @@ trayer
 ttf-dejavu
 ttf-fira-code
 ttf-firacode-nerd
-ttf-font-awesome
 ttf-liberation
 ttf-opensans
 ttf-sourcecodepro-nerd
@@ -183,6 +183,7 @@ vim
 wget
 wireshark-qt
 wl-clipboard
+woff2-font-awesome
 xclip
 xdg-desktop-portal-cosmic
 xdotool
