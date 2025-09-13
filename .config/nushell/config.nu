@@ -203,6 +203,56 @@ def --env yy [...args] {
 	rm -fp $tmp
 }
 
+# Load environment variables from a bash script
+def --env load_env [
+    env_file: path = ./.env # path to a script
+] {
+
+    def parse_env [] {
+        split row (char nul)
+        | split column -n 2 "=" key value
+        | where key not-in ["PWD", "SHLVL", "_", ""]
+        | sort-by key
+    }
+
+    let old_env = bash --noprofile --norc -c "env --null"
+    | parse_env
+    | rename key old_value
+
+    let new_env = bash --noprofile --norc -c $"source ($env_file); env --null"
+    | parse_env
+    | rename key new_value
+
+    let combined_env = $old_env | join -o $new_env key
+
+    let diff = $combined_env | where $it.new_value != $it.old_value
+    if ($diff | is-empty) {
+        print "No environment variables to update."
+        return
+    }
+
+    print ($diff | rename env old new | table --collapse)
+    let confirm = input --numchar 1 --default "y" "Do you want to apply the changes? (y/n): "
+    if $confirm != "y" {
+        print "Changes not applied"
+        return $diff
+    }
+
+    # remove old variables
+    $combined_env
+    | where $it.new_value == null
+    | each { hide-env $in.key }
+
+    # add & update the existing ones
+    $combined_env
+    | where $it.old_value != $it.new_value
+    | select key new_value
+    | transpose -r -d
+    | load-env
+
+    print "Changes applied successfully"
+}
+
 use ~/.cache/nushell/starship.nu
 source ~/.cache/nushell/zoxide.nu
 source ~/git/nu_scripts/custom-completions/git/git-completions.nu
