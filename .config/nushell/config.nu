@@ -64,9 +64,19 @@ $env.config = {
       null  # replace with source code to run before the repl input is run
     }]
     env_change: {
-      PWD: [{|before, after|
-        null  # replace with source code to run if the PWD environment is different since the last repl input
-      }]
+      PWD: [{
+            condition: {|_, after|
+                ($after | path join "venv" | path exists)
+            }
+            code: "overlay use venv/bin/activate.nu"
+        }
+        {
+            condition: {|before, after|
+              (($after | path join "venv" | path exists) == false
+                    and 'activate' in (overlay list | get name))
+            }
+            code: "overlay hide activate --keep-env [ PWD ]"
+        }]
     }
     # display_output: {
     #   if (term size).columns >= 100 { table -e } else { table }
