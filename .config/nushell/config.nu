@@ -66,13 +66,13 @@ $env.config = {
     env_change: {
       PWD: [{
             condition: {|_, after|
-                ($after | path join "venv" | path exists)
+                ($after | path join "venv" "bin" "activate.nu" | path exists)
             }
             code: "overlay use venv/bin/activate.nu"
         }
         {
             condition: {|before, after|
-              (($after | path join "venv" | path exists) == false
+              (($after | path join "venv" "bin" "activate.nu" | path exists) == false
                     and 'activate' in (overlay list | get name))
             }
             code: "overlay hide activate --keep-env [ PWD ]"
